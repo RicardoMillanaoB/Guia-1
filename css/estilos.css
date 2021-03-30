@@ -1,8 +1,107 @@
-formulario{
+body{
+
+}
+.contenedor{
+  max-width: 140rem;
+  width: 100%;
+  weight:100%;
+}
+.titulo-h1{
+  color:black;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.navegacion{
+  display: flex;
+  flex-direction: column;
+  background-color: #FFC107;
+  padding-bottom: 1rem;
+}
+.navegacion a{
+  color: black;
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: right;
+}
+
+.formulario{
+  width:min(700px, 100%);/*valo mas pequeño, se puede ahorrar media querys*/
   margin: 0 auto;
-  width: 400px;
-  
-  padding: 1em;
-  border: 1px solid #CCC;
-  border-radius: 1em;
+  padding: 4rem;
+  border-radius: 10px;
+}
+
+.formulario fieldset{
+  border: none;
+  text-align: left;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.datos{
+  margin-bottom: 1rem;
+}
+.datos label{
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+.datos-ch{
+  margin: .1rem;
+  text-align: left;
+}
+.input-text{
+  width: 100%;
+  padding:.5rem;
+  border-radius: .5rem;
+}
+.form-genero label{
+  font-size: 18px;
+  text-transform: none;
+  font-weight: normal;
+}
+.input-checkbox{
+  padding: 0;
+  border-radius: 0;
+}
+.boton-st{
+  background-color:#FFC107;
+  padding: 1rem 3rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: .5rem;
+  width: 10%;
+  text-align: center;
+  border: 1px solid black;
+
+}
+.boton-st a{
+  font-size: 1rem;
+  color:black;
+  text-decoration: none;
+}
+
+
+.tabla{
+  border: 1px solid black;
+  width: 60rem;
+  margin: 3rem auto;
+  font-size: 20px;
+}
+.tabla tr, th, td{
+  border: 1px solid black;
+  text-align: center;
+}
+.tabla th{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+
+}
+.tabla td{
+  font-weight: lighter;
 }

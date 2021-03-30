@@ -2,29 +2,73 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>index</title>
+    <title>Formulario</title>
     <link href="css/estilos.css" rel="stylesheet">
   </head>
   <body>
-    <form class=formulario>
-        <div>
+
+    <nav class="navegacion contenedor">
+      <h1 class="titulo-h1">Formulario</h1>
+      <a href="tabla.html">ir a Tabla</a>
+    </nav>
+
+    <form class="formulario">
+      <fieldset>
+        <div class="datos">
           <label>Nombre</label>
-         <input class="input-text" type="text" placeholder="Ingresa tu nombre completo">
+         <input class="input-text" type="text" placeholder="Ingrese su nombre completo">
         </div>
-        <div>
+        <div class="datos">
           <label>Correo</label>
-         <input class="input-text" type="email" placeholder="Ingresa tu nombre completo">
+         <input class="input-text" type="email" placeholder="Ingrese su correo">
         </div>
-        <div>
+        <div class="datos">
           <label>Contacto telefonico</label>
-         <input class="input-text" type="number" placeholder="Ingresa tu nombre completo">
+         <input class="input-text" type="number" placeholder="Ingrese su número telefónico">
         </div>
-        <div>
+        <div class="datos">
           <label>Fecha de nacimiento</label>
-         <input class="input-text" type="date" placeholder="Ingresa tu nombre completo">
+         <input class="input-text" type="date" placeholder="Ingrese su fecha de nacimiento">
+        </div>
+        <label>Carrera</label>
+        <div class="form-genero">
+          <div class="datos-ch">
+            <input type="checkbox" name="hombre" value="g-hombre">
+            <label for="hombre">Ingeniería Informática</label><br>
+          </div>
+          <div class="datos-ch">
+            <input type="checkbox" name="mujer" value="g-mujer">
+            <label for="hombre">Ingeniería Civil Informática</label><br>
+          </div>
+          <div class="datos-ch">
+            <input type="checkbox" name="otro" value="g-otro">
+            <label for="hombre">I. Civil Industrial M. Informática</label><br>
+          </div>
+      </div>
+      <p></p>
+          <label>Género</label>
+          <div class="form-genero">
+            <div class="datos-ch">
+              <input type="checkbox" name="hombre" value="g-hombre">
+              <label for="hombre">Masculino</label><br>
+            </div>
+            <div class="datos-ch">
+              <input type="checkbox" name="mujer" value="g-mujer">
+              <label for="hombre">Femenino</label><br>
+            </div>
+            <div class="datos-ch">
+              <input type="checkbox" name="otro" value="g-otro">
+              <label for="hombre">Otro</label><br>
+            </div>
+        </div>
+        <div class="boton-st">
+            <a href="tabla.html">Enviar</a>
         </div>
 
+      </fieldset>
     </form>
+
+
 
   </body>
 </html>
