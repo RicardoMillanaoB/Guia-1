@@ -1,0 +1,27 @@
+:root{
+  --primary-dark-cyan: hsl(185,75%,39%);
+  --primary-very-blue: hsl(229,23%,23%);
+  --primary-dark-blue: hsl(227,10%,46%);
+  --dark_gray: hsl(0,0%,91%);
+}
+
+body{
+  background-color: var(--primary-dark-cyan);
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container-i{
+  width: 15%;
+  background-image: url(../img/bg-pattern-card.svg);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+
+}
+.container-l{
+  display: flex;
+  align-items: center;
+  flex-direction:  column;
+
+}
