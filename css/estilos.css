@@ -1,0 +1,94 @@
+:root{
+  --primario: #141212;
+  --secundario: #2D2E2E;
+  --terciario: #ADADAD;
+  --resultado: #58B698;
+  --icono:#494B4B;
+
+  --tamanoX: 450px;
+  --tamanoY: 500px;
+  --tamanoFont: 30px;
+
+}
+html{
+  font-size: var(--tamanoFont);
+  font-family: 'Bebas Neue', cursive;
+  text-transform: none;
+  text-decoration: none;
+}
+.calculadora{
+  background-color: var(--primario);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 0 auto;
+  width:var(--tamanoX);
+  height: var(--tamanoY);
+  border-radius: 5%;
+}
+.calculadora1{
+ 
+  
+  padding: 12px 25px;
+}
+.resultado{
+  color: var(--resultado);
+  text-align: right;
+  font-weight: bold;
+}
+.calculadora2{
+  
+  display: grid;
+  gap: 10px;
+  grid-template: repeat(4,.25fr) / repeat(5,1fr);
+  background-color: var(--secundario);
+  padding: 12px 15px;
+  border-radius: 7%;
+  height: 100%;
+}
+.boton{
+  border-radius: 5%;
+
+  text-align: center;
+  color: var(--terciario);
+  padding: 15px 10px;
+}
+.-icono{
+  background-color: var(--icono);
+  border-radius: 100%;
+  text-align: center;
+  align-items: center;
+  padding: 15px 10px;
+}
+.-icono2{
+  border-radius: 100%;
+  background-color: var(--icono);
+  color: var(--terciario);
+  display: inline-block;
+  font: normal normal normal var(--tamanoFont);
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: auto;
+
+}
+.-i2{
+  background-color: var(--resultado);
+  color: var(--primario);
+
+}
+.-i3{
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  border-radius: 5%;
+}
+.-i4{
+  background-color: red;
+  color: white;
+
+}
