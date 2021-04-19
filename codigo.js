@@ -17,6 +17,7 @@ var btn_borrar = document.getElementById("btn-borrar");
 var btn_restar= document.getElementById("btn-restar");
 var btn_sumar = document.getElementById("btn-sumar");
 var btn_resolver = document.getElementById("btn-resolver");
+var btn_punto = document.getElementById("btn-punto");
 
 var primer = '0';
 var segundo = '0';
@@ -228,6 +229,15 @@ btn_sumar.addEventListener("click",function(){
     }
 });
 
+btn_punto.addEventListener("click",function(){
+    if(isOperacion == false){
+        primer = primer+'.';
+        primer_numero.innerHTML = primer;
+    }else{
+        segundo = segundo+'.';
+        segundo_numero.innerHTML = segundo;
+    }
+});
 
 
 btn_resolver.addEventListener("click",function(){
