@@ -70,9 +70,14 @@ html{
 .comentario h4{
     font-weight: 900;
     font-size: 15px;
+    margin: 0;
 
 }
 .comentario h5{
+    margin: 10px 0px;
     font-weight: 300;
     font-size: 13px;
+}
+.comentario h6{
+    margin: 5px 0px;
 }

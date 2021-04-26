@@ -4,16 +4,27 @@ var aut1 = document.getElementById("autor");
 var com1 = document.getElementById("comentario");
 
 var des_aut = document.getElementsByName("aut");
+var des_fecha = document.getElementsByName("fecha");
 var des_com = document.getElementsByName("com");
 
 var autores = new Array();
 var comentarios = new Array();
+var fechas = new Array();
 
 btn_enviar.addEventListener("click",function(){
-    autores.push(document.getElementById("autor").value);
-    comentarios.push(document.getElementById("comentario").value)
-    limpiar();
-    limite();
+    if(document.getElementById("autor").value.length <= 3 || document.getElementById("comentario").value.length <= 3 ){
+
+    }else{
+        autores.push(document.getElementById("autor").value);
+        const fecha = new Date();
+        const hoy = fecha.getDate();
+        const mesActual = fecha.getMonth() + 1; 
+        fechas.push(hoy+"/"+mesActual);
+        comentarios.push(document.getElementById("comentario").value);
+        
+        limpiar();
+        limite();
+    }
 })
 function limpiar(){
     document.getElementById("autor").value = "";
@@ -23,10 +34,12 @@ function limite(){
     if(autores.length>=4){
         for(var i = 0; i < autores.length;i++){
             des_aut[i].innerHTML = autores[autores.length-4+i];
+            des_fecha[i].innerHTML = fechas[fechas.length-4+i];
             des_com[i].innerHTML = comentarios[comentarios.length-4+i];
         }
     }else{
         des_aut[autores.length-1].innerHTML = autores[autores.length-1];
+        des_fecha[fechas.length-1].innerHTML = fechas[fechas.length-1];
         des_com[autores.length-1].innerHTML = comentarios[comentarios.length-1];
     }
 }
