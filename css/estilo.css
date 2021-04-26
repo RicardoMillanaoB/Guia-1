@@ -1,15 +1,54 @@
 :root{
     --primario: #A2D9CE ;
     --secundario: #73C6B6;
-    --terciario: ;
+    --terciario: #09a787;
 
     --ancho: 1000px;
     --alto: 600px;
 }
 
 html{
-    background-color: #ffffff;
+    background-color: #d6f6d7;
     font-family: 'Merriweather', serif;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    margin: 1px;
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: var(--terciario);
+}
+a{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+    margin: 0 90px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+    margin: 1px;
+    margin-top: 30px;
+    width: 100%;
+    background-color: rgb(63, 62, 62);
+}
+footer a{
+    color:white;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 0 90px;
 }
 .seccion{
     border-radius: 100%;
@@ -30,6 +69,10 @@ html{
     justify-content: center;
     padding: 40px;
     background-color: var(--primario);
+}
+.formulario h1{
+    text-align: center;
+    margin-bottom: 80px;
 }
 .formulario h3{
     margin: 10px;
