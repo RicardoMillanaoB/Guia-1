@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="seccion">
+        <div class="formulario">
+            <h3>Autor</h3>
+            <input type="text" minlength="3" maxlength="200" id="autor" onkeypress="return limitaAutor(3);" placeholder="Indique el nombre del autor">
+            <span id="span-autor">&nbsp</span>
+            <h3>Comentario</h3>
+            <input type="text" minlength="3" maxlength="200" id="comentario" onkeypress="return limitaComentario(3)" placeholder="Escriba el comentario">
+            <span id="span-comentario">&nbsp</span>
+            <button id="btn-enviar">Agregar</button>
+        </div>
+        <div class="panel-comentarios">
+            <div class="comentario">
+                <h4 name="aut"></h4>
+                <h5 name="com"></h5>
+            </div>
+            <div class="comentario">
+                <h4 name="aut"></h4>
+                <h5 name="com"></h5>
+            </div>
+            <div class="comentario">
+                <h4 name="aut"></h4>
+                <h5 name="com"></h5>
+            </div>
+            <div class="comentario">
+                <h4 name="aut"></h4>
+                <h5 name="com"></h5>
+            </div>
+        </div>
+    </section>
+   
+    <script src="js/codigo.js"></script>
+</body>
+</html>
