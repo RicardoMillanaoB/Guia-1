@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>CRUD</title>
+</head>
+<body id="body">
+
+ <main>
+     <div id="formulario">
+         <div class="cont">
+            <h4>Nombre</h4>
+        <input type="text" v-model="nombre_inp">
+         </div>
+         <div class="cont">
+            <h4>Descripcion</h4>
+            <input type="text" v-model="descripcion_inp">
+        </div>
+        <div class="cont">
+            <h4>Precio</h4>
+            <input type="number" v-model="precio_inp"> 
+    
+        </div>
+        
+        <p>{{adv}}</p>
+        
+        <button class="agregar" @click="getFormValues()">{{boton}}</button>
+        
+    
+        <div class="listado">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th><th>Desripcion</th><th>Precio</th><th></th><th></th>
+                    </tr>
+                </thead> 
+                    <tbody v-for="(item,index) in objetos">
+                        <tr>
+                            <td><span>{{item.nombre}}</span></td>
+                            <td><span>{{item.descripcion}}</span></td>
+                            <td><span>${{item.precio}}</span></td>
+                            <td><button class="boton -editar" @click="setValues(index)">Editar</button></td>
+                            <td><button class="boton -eliminar" @click="deleteValues(index)">Eliminar</button></td>  
+                        </tr>
+                    </tbody>                    
+            </table>
+        </div>
+    </div>
+
+</main>
+    
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+   <script src="codigo/codigo.js"></script>
+</body>
+</html>

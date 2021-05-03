@@ -1,0 +1,98 @@
+:root{
+    --ancho:800px;
+}
+main{ 
+    display: flex;
+    justify-content: center;
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--ancho);
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#formulario h4{
+
+    text-align: left;
+    margin: 4px;
+}
+#formulario p{
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+    padding: 0;
+    margin: 0;
+}
+#formulario input{
+    max-width: 500px;
+    min-width: 400px;
+    padding: 7px;
+    margin: 4px;
+    align-items: center;
+}
+#formulario button{
+  
+    margin-top: 10px;
+    width: 200px;
+    align-self: center;
+    padding: 10px;
+}
+.agregar{
+    background-color: #219735;
+    font-weight: bold;
+    color: white;
+}
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.listado{
+   margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    font-size: 18px;
+}
+.listado input{
+    max-width: 60px;
+    width: 50px;
+}
+table{
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    border:solid 1px black;
+}
+td, th{
+    padding: 10px;
+}
+.boton{
+    font-size: 12px;
+    max-width: 63px;
+    text-align: center;
+}
+.-editar{
+    background-color: #3047ad;
+    color: white;
+}
+.-eliminar{
+    background-color: #a12c17;
+    color: white;
+}
+thead{
+    background-color: #246355;
+    border-bottom: solid 3px #0F362F;
+    color:white;
+}
+tr:nth-child(even){
+    background-color: #ddd;
+}
